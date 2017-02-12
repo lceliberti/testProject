@@ -5,10 +5,14 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
+	/*"github.com/dgryski/go-bloomindex"*/
+	"datautil"
 	"mathutil"
 	"sort"
 	"stringutil"
 )
+
+import "github.com/tylertreat/BoomFilters"
 
 /*Struct identify an individual person*/
 type person struct {
@@ -19,18 +23,32 @@ type person struct {
 
 type ByAge []person
 
+func (a ByAge) Len() int           { return len(a) }
+func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a ByAge) Less(i, j int) bool { return a[i].age < a[j].age }
+
+type persons []person
+
 /*Slice to store a group of people*/
 type People struct {
 	Group []person
 }
 
-func (a ByAge) Len() int           { return len(a) }
-func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
-func (a ByAge) Less(i, j int) bool { return a[i].age < a[j].age }
-
+/*Populate people slice by using a "HirePeople" method */
 func (per *People) HirePeople(employee person) []person {
 	per.Group = append(per.Group, employee)
 	return per.Group
+}
+
+func Searchstruc(company People) string {
+
+	for _, pl := range company.Group {
+		fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
+
+		fmt.Println("")
+	}
+	return "done"
+
 }
 
 type MyBoxItem struct {
@@ -64,28 +82,47 @@ func main() {
 	myint := binary.BigEndian.Uint64(hashBytes[:])
 
 	employee := person{personId: myint, name: employeeName, age: 45}
+	newemployee := datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 45}
 
 	fmt.Println(employee.name)
 	fmt.Println(employee.age)
-	/*Declare a ppl as a slice of persons*/
+	/*Declare a ppl as a slice of persons
 	ppl := []person{}
+	*/
 	/*Declare a company as a group of ppl (slice)*/
-	company := People{ppl}
+
+	company := People{}
 	company.HirePeople(employee)
+
+	newcompany := datautil.GenericPeople{}
+	newcompany.HirePeople(newemployee)
 
 	employeeName = "Raymond James"
 	hashBytes = sha1.Sum([]byte(employeeName))
 	myint = binary.BigEndian.Uint64(hashBytes[:])
 
 	employee = person{personId: myint, name: employeeName, age: 12}
+	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
 
 	/*Hiring People (adding them to the company slice)*/
 	company.HirePeople(employee)
 	fmt.Println("How many people are in the company:")
 	fmt.Println(len(company.Group))
-	fmt.Println(company.Group)
+
+	fmt.Println("Printing people and ages in company from function. Pre-Sort")
+	Searchstruc(company)
 	sort.Sort(ByAge(company.Group))
-	fmt.Println(company)
+	fmt.Println("Printing people and ages in company from function. post-Sort")
+	Searchstruc(company)
+
+	/*Hiring People in the new company using package functions*/
+	newcompany.HirePeople(newemployee)
+	fmt.Println("Printing people and ages of the new Company from function. Pre-Sort")
+	/*Using package search function*/
+	datautil.Searchstruc(newcompany)
+	sort.Sort(datautil.GenericByAge(newcompany.Group))
+	fmt.Println("Printing people and ages of the new Company from function. Post-Sort")
+	datautil.Searchstruc(newcompany)
 
 	/*Creating an item*/
 	item1 := MyBoxItem{Name: "Test Item 1"}
@@ -110,5 +147,27 @@ func main() {
 
 	fmt.Println("Printing Hash Int value")
 	fmt.Println(myint)
+
+	fmt.Println("This is my bloom filter codes")
+
+	sbf := boom.NewDefaultStableBloomFilter(10000, 0.01)
+	fmt.Println("stable point", sbf.StablePoint())
+
+	sbf.Add([]byte(`a`))
+
+	if sbf.Test([]byte(`a`)) {
+		fmt.Println("contains a")
+	}
+
+	if !sbf.TestAndAdd([]byte(`b`)) {
+		fmt.Println("doesn't contain b")
+	}
+
+	if sbf.Test([]byte(`b`)) {
+		fmt.Println("now it contains b!")
+	}
+
+	// Restore to initial state.
+	sbf.Reset()
 
 }
