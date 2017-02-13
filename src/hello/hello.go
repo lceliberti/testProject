@@ -2,7 +2,6 @@ package main
 
 import (
 	"crypto/sha1"
-	"encoding/binary"
 	"encoding/hex"
 	"fmt"
 	/*"github.com/dgryski/go-bloomindex"*/
@@ -11,8 +10,6 @@ import (
 	"sort"
 	"stringutil"
 )
-
-import "github.com/tylertreat/BoomFilters"
 
 /*Struct identify an individual person*/
 type person struct {
@@ -78,8 +75,8 @@ func main() {
 	/*Creating an employee*/
 
 	employeeName := "Louie Celiberti"
-	hashBytes := sha1.Sum([]byte(employeeName))
-	myint := binary.BigEndian.Uint64(hashBytes[:])
+
+	myint := stringutil.HashThisString(employeeName)
 
 	employee := person{personId: myint, name: employeeName, age: 45}
 	newemployee := datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 45}
@@ -98,8 +95,8 @@ func main() {
 	newcompany.HirePeople(newemployee)
 
 	employeeName = "Raymond James"
-	hashBytes = sha1.Sum([]byte(employeeName))
-	myint = binary.BigEndian.Uint64(hashBytes[:])
+
+	myint = stringutil.HashThisString(employeeName)
 
 	employee = person{personId: myint, name: employeeName, age: 12}
 	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
@@ -149,25 +146,14 @@ func main() {
 	fmt.Println(myint)
 
 	fmt.Println("This is my bloom filter codes")
+	/*
+		sbf := boom.NewDefaultStableBloomFilter(10000, 0.01)
+		fmt.Println("stable point", sbf.StablePoint())
 
-	sbf := boom.NewDefaultStableBloomFilter(10000, 0.01)
-	fmt.Println("stable point", sbf.StablePoint())
+		sbf.Add([]byte(employeeName))
+	*/
 
-	sbf.Add([]byte(`a`))
-
-	if sbf.Test([]byte(`a`)) {
-		fmt.Println("contains a")
-	}
-
-	if !sbf.TestAndAdd([]byte(`b`)) {
-		fmt.Println("doesn't contain b")
-	}
-
-	if sbf.Test([]byte(`b`)) {
-		fmt.Println("now it contains b!")
-	}
-
-	// Restore to initial state.
-	sbf.Reset()
+	datautil.TestBoomFilter("Hello")
+	datautil.TestBoomFilter(employeeName)
 
 }
