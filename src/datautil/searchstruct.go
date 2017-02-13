@@ -35,6 +35,7 @@ func Searchstruc(company GenericPeople) string {
 		fmt.Println("")
 	}
 	return "done"
+
 }
 
 func TestBoomFilter(str string) {

@@ -2,12 +2,15 @@ package main
 
 import (
 	"crypto/sha1"
+	"datautil"
 	"encoding/hex"
 	"fmt"
-	/*"github.com/dgryski/go-bloomindex"*/
-	"datautil"
+	"github.com/dgryski/go-bloomindex"
+	"hash/crc32"
 	"mathutil"
+	//"reflect"
 	"sort"
+	//"strconv"
 	"stringutil"
 )
 
@@ -155,5 +158,54 @@ func main() {
 
 	datautil.TestBoomFilter("Hello")
 	datautil.TestBoomFilter(employeeName)
+
+	idx := bloomindex.NewIndex(256, 1024, 4)
+
+	/*populate BloomIndex, by looking through company*/
+	var toks []uint32
+	var qtoks []uint32
+	var qtoks2 []uint32
+	for _, pl := range company.Group {
+		fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
+
+		toks = append(toks, crc32.ChecksumIEEE([]byte(pl.name)))
+		fmt.Println("Docid:", pl.name)
+		fmt.Println(crc32.ChecksumIEEE([]byte(pl.name)))
+
+	}
+	idx.AddDocument(toks)
+
+	qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("test")))
+	//qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
+
+	fmt.Println(len(qtoks))
+
+	ids := idx.Query(qtoks)
+
+	//want := []bloomindex.DocID{5, 6}
+
+	fmt.Println("Bloomindex outputssss")
+	fmt.Println(len(ids))
+	fmt.Println(ids)
+
+	for _, doc := range ids {
+
+		fmt.Println(doc)
+	}
+
+	qtoks2 = append(qtoks2, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
+
+	fmt.Println(len(qtoks2))
+
+	ids = idx.Query(qtoks2)
+
+	fmt.Println("Bloomindex outputs with Louie Celiberti")
+	fmt.Println(len(ids))
+	fmt.Println(ids)
+
+	for _, doc := range ids {
+
+		fmt.Println(doc)
+	}
 
 }
