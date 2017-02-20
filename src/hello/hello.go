@@ -5,9 +5,11 @@ import (
 	"datautil"
 	"encoding/hex"
 	"fmt"
-	"github.com/dgryski/go-bloomindex"
 	"hash/crc32"
 	"mathutil"
+	"strconv"
+
+	"github.com/dgryski/go-bloomindex"
 	//"reflect"
 	"sort"
 	//"strconv"
@@ -66,6 +68,7 @@ func (box *MyBox) AddItem(item MyBoxItem) []MyBoxItem {
 }
 
 func main() {
+
 	fmt.Printf("Hello, world. Now in hello.go\n")
 
 	fmt.Printf("Calling reverse function.\n")
@@ -175,7 +178,7 @@ func main() {
 	}
 	idx.AddDocument(toks)
 
-	qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("test")))
+	//qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("test")))
 	//qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
 
 	fmt.Println(len(qtoks))
@@ -183,20 +186,23 @@ func main() {
 	ids := idx.Query(qtoks)
 
 	//want := []bloomindex.DocID{5, 6}
+	/*
+		fmt.Println("Bloomindex outputssss")
+		fmt.Println(len(ids))
+		fmt.Println(ids)
+		fmt.Println(cap(ids))
+		for _, doc := range ids {
 
-	fmt.Println("Bloomindex outputssss")
-	fmt.Println(len(ids))
-	fmt.Println(ids)
+			fmt.Println(doc)
+		}
+	*/
 
-	for _, doc := range ids {
-
-		fmt.Println(doc)
-	}
-
-	qtoks2 = append(qtoks2, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
+	qtoks2 = append(qtoks2, crc32.ChecksumIEEE([]byte("Raymond James")))
 
 	fmt.Println(len(qtoks2))
 
+	ids = idx.Query(qtoks2)
+	qtoks2 = append(qtoks2, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
 	ids = idx.Query(qtoks2)
 
 	fmt.Println("Bloomindex outputs with Louie Celiberti")
@@ -206,6 +212,8 @@ func main() {
 	for _, doc := range ids {
 
 		fmt.Println(doc)
+		fmt.Println("printing doc")
+		fmt.Println(strconv.FormatUint(uint64(doc), 16))
 	}
 
 }
