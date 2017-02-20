@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"html/template"
@@ -11,6 +12,12 @@ import (
 	"os"
 	"time"
 )
+
+type Todoname struct {
+	Name string `json:"name"`
+}
+
+type Todosnames []Todoname
 
 type MyMux struct {
 }
@@ -52,7 +59,9 @@ func main() {
 	http.HandleFunc("/delete/", DeleteAllTasksFunc)
 	http.HandleFunc("/homeh/", homeHandler)
 	http.HandleFunc("/webserviceget/", callWebServiceGet)
-	http.HandleFunc("/webservicepostparam/", callWebServicePostParam)
+	http.HandleFunc("/submitlogin/", submitLogin)
+	http.HandleFunc("/submittodos/", submitTodos)
+	//http.HandleFunc("/webservicepostparam/", callWebServicePostParam)
 	err := http.ListenAndServe(":9090", nil) // setting listening port
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
@@ -77,8 +86,8 @@ func login(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		log.Println("Parsing the login file")
 		//var t = template.Must(template.New("name").Parse(templateh))
-		//var t = template.Must(template.New("login.html").ParseFiles("templates/login.html"))
-		var t = template.Must(template.New("test.html").ParseFiles("templates/test.html"))
+		var t = template.Must(template.New("login.html").ParseFiles("templates/login.html"))
+		//var t = template.Must(template.New("test.html").ParseFiles("templates/test.html"))
 		log.Println("Parsed the login file")
 		t.Execute(w, nil)
 	} else {
@@ -88,6 +97,22 @@ func login(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("password:", r.Form["password"])
 	}
 }
+
+func submitLogin(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("method:", r.Method) //get request method
+	if r.Method == "GET" {
+		t, _ := template.ParseFiles("login.gtpl")
+		t.Execute(w, nil)
+	} else {
+		r.ParseForm()
+		// logic part of log in
+		fmt.Println("username:", r.Form["username"])
+		fmt.Println("password:", r.Form["password"])
+		log.Println("username:", r.Form["username"])
+		log.Println("password:", r.Form["password"])
+	}
+}
+
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl := template.Must(template.New("test.html").ParseFiles("templates/test.html"))
 	wd := WebData{
@@ -96,6 +121,56 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, &wd)
 }
 
+func submitTodos(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("method:", r.Method) //get request method
+	log.Println("method:", r.Method)
+
+	if r.Method == "GET" {
+		log.Println("Parsing the submit file")
+		var t = template.Must(template.New("submittodos.html").ParseFiles("templates/submittodos.html"))
+		log.Println("Parsed the submit file")
+		t.Execute(w, nil)
+	} else {
+		r.ParseForm()
+		// logic part of log in
+		fmt.Println("taskname:", r.Form["taskname"])
+		{
+			url := "http://localhost:8080/todos"
+			fmt.Println("URL:>", url)
+			var taskname string
+			var tdns Todosnames
+			for _, tasks := range r.Form["taskname"] {
+				taskname = tasks
+				fmt.Println("task name: ", taskname)
+
+				//Populate a struct with an appointment
+				tdn := Todoname{Name: taskname}
+				//Declare a variable of slice type
+
+				//populate slice by appending with struct
+				tdns = append(tdns, tdn)
+
+				jsonStr, err := json.Marshal(tdns)
+				//Post Request
+				req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+				req.Header.Set("X-Custom-Header", "myvalue")
+				req.Header.Set("Content-Type", "application/json")
+
+				client := &http.Client{}
+				resp, err := client.Do(req)
+				if err != nil {
+					panic(err)
+				}
+				defer resp.Body.Close()
+
+				fmt.Println("response Status:", resp.Status)
+				fmt.Println("response Headers:", resp.Header)
+				body, _ := ioutil.ReadAll(resp.Body)
+				fmt.Println("response Body:", string(body))
+			}
+		}
+	}
+}
 func callWebServiceGet(w http.ResponseWriter, r *http.Request) {
 	resp, err := http.Get("http://localhost:8080/todos")
 
@@ -141,9 +216,7 @@ func callWebServiceGet(w http.ResponseWriter, r *http.Request) {
 	log.Println(resp.Trailer)
 	log.Println("Proto")
 	log.Println(resp.Proto)
-
 	fmt.Println("method:", r.Method) //get request method
 	log.Println("method:", r.Method)
 	//templateh := "<html> <head><title> Hello World!</title></head><body><form action=\"/login\" method=\"post\">Username:<input type=\"text\" name=\"username\">Password:<input type=\"password\" name=\"password\"><input type=\"submit\" value=\"Login\"></form></body></html>"
-
 }

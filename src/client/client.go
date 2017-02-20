@@ -19,14 +19,21 @@ type Todo struct {
 	Due       time.Time `json:"due"`
 }
 
+type Todoname struct {
+	Name string `json:"name"`
+}
+
+type Todosnames []Todoname
+
 func main() {
 
 	var vmethod string
 
 	vmethod = "post"
+
 	if vmethod == "get" {
 		resp, err := http.Get("http://localhost:8080/todos")
-
+		fmt.Println("Calling Get")
 		body, err := ioutil.ReadAll(io.LimitReader(resp.Body, 1048576))
 		if err != nil {
 			panic(err)
@@ -51,16 +58,30 @@ func main() {
 	} else {
 		url := "http://localhost:8080/todos"
 		fmt.Println("URL:>", url)
+		/*
+			var jsonStart = "["
+			var jsonBody = `{"name":"my breakfast appt"},{"name":"my lunch appt"}`
+			jsonBody = jsonBody + `,{"name":"my dinner appt"}`
+			var jsonEnd = "]"
+			var jsonRaw = jsonStart + jsonBody + jsonEnd
 
-		var jsonStart = "["
-		var jsonBody = `{"name":"my breakfast appt"},{"name":"my lunch appt"}`
-		jsonBody = jsonBody + `,{"name":"my dinner appt"}`
-		var jsonEnd = "]"
-		var jsonRaw = jsonStart + jsonBody + jsonEnd
+		*/
+
+		tdn := Todoname{Name: "my breakfast appt"}
+		var tdns Todosnames
+		tdns = append(tdns, tdn)
+		tdn = Todoname{Name: "my lunch appt"}
+		tdns = append(tdns, tdn)
+		tdn = Todoname{Name: "my dinner appt"}
+		tdns = append(tdns, tdn)
+		tdn = Todoname{Name: "Drinks after work"}
+		tdns = append(tdns, tdn)
+
 		//var jsonStr = []byte(`[{"name":"my breakfast appt"},{"name":"my lunch appt"}]`)
 		//Convert JSON string into byte slice
-		var jsonStr = []byte(jsonRaw)
-
+		//var jsonStr = []byte(jsonRaw)
+		jsonStr, err := json.Marshal(tdns)
+		//Post Request
 		req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 		req.Header.Set("X-Custom-Header", "myvalue")
 		req.Header.Set("Content-Type", "application/json")
