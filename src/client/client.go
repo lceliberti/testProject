@@ -67,16 +67,21 @@ func main() {
 
 		*/
 
+		//Populate a struct with an appointment
 		tdn := Todoname{Name: "my breakfast appt"}
+		//Declare a variable of slice type
 		var tdns Todosnames
+		//populate slice by appending with struct
 		tdns = append(tdns, tdn)
+		
+		//Repeat population
 		tdn = Todoname{Name: "my lunch appt"}
 		tdns = append(tdns, tdn)
 		tdn = Todoname{Name: "my dinner appt"}
 		tdns = append(tdns, tdn)
 		tdn = Todoname{Name: "Drinks after work"}
 		tdns = append(tdns, tdn)
-
+		//
 		//var jsonStr = []byte(`[{"name":"my breakfast appt"},{"name":"my lunch appt"}]`)
 		//Convert JSON string into byte slice
 		//var jsonStr = []byte(jsonRaw)

@@ -37,35 +37,46 @@ func NewRouter() *mux.Router {
 	return router
 }
 
+/*
+	http.HandleFunc("/", sayhelloName) // setting router rule
+	http.HandleFunc("/login/", login)
+	http.HandleFunc("/delete/", DeleteAllTasksFunc)
+	http.HandleFunc("/homeh/", homeHandler)
+	http.HandleFunc("/webserviceget/", callWebServiceGet)
+	http.HandleFunc("/submitlogin/", submitLogin)
+	http.HandleFunc("/submittodos/", submitTodos)
+	//http.HandleFunc("/webservicepostparam/", callWebServicePostParam)
+*/
+
 var routes = Routes{
 	Route{
 		"Index",
 		"GET",
 		"/",
-		Index,
+		sayhelloName,
 	},
 	Route{
-		"TodoIndex",
+		"login",
 		"GET",
-		"/todos",
-		TodoIndex,
+		"/login",
+		login,
 	},
 	Route{
-		"TodoShow",
+		"submittodos",
+		"POST",
+		"/submittodos",
+		submitTodos,
+	},
+	Route{
+		"submittodos",
 		"GET",
-		"/todos/{todoId}",
-		TodoShow,
+		"/submittodos",
+		submitTodos,
 	},
 	Route{
-		"TodoCreate",
-		"POST",
-		"/todos",
-		TodoCreate,
-	},
-	Route{
-		"TodoDestroy",
-		"POST",
-		"/deletetodos",
-		TodoDestroy,
+		"webserviceget",
+		"GET",
+		"/webserviceget",
+		callWebServiceGet,
 	},
 }

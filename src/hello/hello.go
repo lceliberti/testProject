@@ -1,13 +1,21 @@
 package main
 
 import (
+	"bytes"
 	"crypto/sha1"
 	"datautil"
 	"encoding/hex"
+	"encoding/json"
 	"fmt"
 	"hash/crc32"
+	"io"
+	"io/ioutil"
+	"log"
 	"mathutil"
+	"net/http"
 	"strconv"
+	"strings"
+	"time"
 
 	"github.com/dgryski/go-bloomindex"
 	//"reflect"
@@ -24,6 +32,26 @@ type person struct {
 }
 
 type ByAge []person
+
+type Todo1 struct {
+	Id        int       `json:"id"`
+	Name      string    `json:"name"`
+	Completed bool      `json:"completed"`
+	Due       time.Time `json:"due"`
+}
+
+type Todo struct {
+	Id        uint64    `json:"id"`
+	Name      string    `json:"name"`
+	Completed bool      `json:"completed"`
+	Due       time.Time `json:"due"`
+}
+
+type Todoname struct {
+	Name string `json:"name"`
+}
+
+type Todosnames []Todoname
 
 func (a ByAge) Len() int           { return len(a) }
 func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
@@ -68,7 +96,7 @@ func (box *MyBox) AddItem(item MyBoxItem) []MyBoxItem {
 }
 
 func main() {
-
+	var myToDoID uint64
 	fmt.Printf("Hello, world. Now in hello.go\n")
 
 	fmt.Printf("Calling reverse function.\n")
@@ -109,6 +137,34 @@ func main() {
 
 	/*Hiring People (adding them to the company slice)*/
 	company.HirePeople(employee)
+	company.HirePeople(employee)
+	employeeName = "Cheryl Celiberti"
+
+	myint = stringutil.HashThisString(employeeName)
+
+	employee = person{personId: myint, name: employeeName, age: 2}
+	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
+
+	company.HirePeople(employee)
+
+	employeeName = "Chris James"
+
+	myint = stringutil.HashThisString(employeeName)
+
+	employee = person{personId: myint, name: employeeName, age: 2}
+	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
+
+	company.HirePeople(employee)
+
+	employeeName = "Richard James"
+
+	myint = stringutil.HashThisString(employeeName)
+
+	employee = person{personId: myint, name: employeeName, age: 2}
+	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
+
+	company.HirePeople(employee)
+
 	fmt.Println("How many people are in the company:")
 	fmt.Println(len(company.Group))
 
@@ -162,58 +218,105 @@ func main() {
 	datautil.TestBoomFilter("Hello")
 	datautil.TestBoomFilter(employeeName)
 
-	idx := bloomindex.NewIndex(256, 1024, 4)
+	idx := bloomindex.NewShardedIndex(0.01, 4)
 
 	/*populate BloomIndex, by looking through company*/
-	var toks []uint32
-	var qtoks []uint32
-	var qtoks2 []uint32
+	//	var toks []uint32
+	//	var qtoks []uint32
+	//var qtoks2 []uint32
+	var m map[uint64]uint64
+	m = make(map[uint64]uint64)
+	var iter uint64
+	iter = 0
 	for _, pl := range company.Group {
+		m[iter] = pl.personId
 		fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
+		tokens := strings.Fields(pl.name)
+		var toks []uint32
 
-		toks = append(toks, crc32.ChecksumIEEE([]byte(pl.name)))
+		for _, t := range tokens {
+			fmt.Println("Name: ", pl.name, "token: ", t)
+			toks = append(toks, crc32.ChecksumIEEE([]byte(t)))
+		}
+		idx.AddDocument(toks)
 		fmt.Println("Docid:", pl.name)
 		fmt.Println(crc32.ChecksumIEEE([]byte(pl.name)))
-
+		iter = iter + 1
 	}
-	idx.AddDocument(toks)
 
-	//qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("test")))
-	//qtoks = append(qtoks, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
+	var toks []uint32
+	qstr := "James"
+	query := []string{qstr}
 
-	fmt.Println(len(qtoks))
+	for _, q := range query {
+		toks = append(toks, crc32.ChecksumIEEE([]byte(q)))
+	}
 
-	ids := idx.Query(qtoks)
+	ids := idx.Query(toks)
 
-	//want := []bloomindex.DocID{5, 6}
-	/*
-		fmt.Println("Bloomindex outputssss")
-		fmt.Println(len(ids))
-		fmt.Println(ids)
-		fmt.Println(cap(ids))
-		for _, doc := range ids {
-
-			fmt.Println(doc)
-		}
-	*/
-
-	qtoks2 = append(qtoks2, crc32.ChecksumIEEE([]byte("Raymond James")))
-
-	fmt.Println(len(qtoks2))
-
-	ids = idx.Query(qtoks2)
-	qtoks2 = append(qtoks2, crc32.ChecksumIEEE([]byte("Louie Celiberti")))
-	ids = idx.Query(qtoks2)
-
-	fmt.Println("Bloomindex outputs with Louie Celiberti")
-	fmt.Println(len(ids))
+	fmt.Println("Printing ids returned from", qstr)
+	fmt.Println("length of ids: ", len(ids))
 	fmt.Println(ids)
-
+	fmt.Println(ids[0])
 	for _, doc := range ids {
 
-		fmt.Println(doc)
-		fmt.Println("printing doc")
+		fmt.Println("printing docs for", qstr)
 		fmt.Println(strconv.FormatUint(uint64(doc), 16))
+		fmt.Println(m[uint64(doc)])
+		myToDoID = m[uint64(doc)]
+		fmt.Println("Calling getToDos for: ", myToDoID)
+		getToDos(myToDoID)
+	}
+
+	/******* Calling findToDo*****/
+}
+
+func getToDos(myToDoID uint64) {
+	url := "http://localhost:8080/findtodos"
+	//	fmt.Println("URL:>", url)
+	tdn := Todo{Id: myToDoID}
+	//	fmt.Println(myToDoID)
+
+	var tdns []Todo
+	//populate slice by appending with struct
+	tdns = append(tdns, tdn)
+	jsonStr, err := json.Marshal(tdns)
+
+	//Post Request
+	//	fmt.Println(jsonStr)
+	req, err := http.NewRequest("GET", url, bytes.NewBuffer(jsonStr))
+
+	req.Header.Set("X-Custom-Header", "myvalue")
+	req.Header.Set("Content-Type", "application/json")
+
+	//Create an HTTP client and execute request
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		panic(err)
+	}
+	//defer resp.Body.Close()
+
+	//	fmt.Println("response Status:", resp.Status)
+	//	fmt.Println("response Headers:", resp.Header)
+
+	body, err := ioutil.ReadAll(io.LimitReader(resp.Body, 1048576))
+	if err != nil {
+		panic(err)
+	}
+
+	//	fmt.Println(os.Stdout, string(body)) //<-- here !
+
+	var todos []Todo
+
+	if err = json.Unmarshal(body, &todos); err != nil {
+		log.Println("Error unmarshelling")
+		log.Println(err)
+	}
+
+	for _, tasks := range todos {
+		fmt.Println("ID: ", tasks.Id, "Name: ", tasks.Name, "Complete: ", tasks.Completed)
+
 	}
 
 }

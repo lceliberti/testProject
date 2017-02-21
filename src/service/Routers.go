@@ -50,12 +50,12 @@ var routes = Routes{
 		"/todos",
 		TodoIndex,
 	},
-	Route{
+	/*Route{
 		"TodoShow",
 		"GET",
 		"/todos/{todoId}",
 		TodoShow,
-	},
+	},*/
 	Route{
 		"TodoCreate",
 		"POST",
@@ -67,5 +67,11 @@ var routes = Routes{
 		"POST",
 		"/deletetodos",
 		TodoDestroy,
+	},
+	Route{
+		"TodoFind",
+		"GET",
+		"/findtodos",
+		TodoFind,
 	},
 }
