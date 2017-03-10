@@ -19,6 +19,7 @@ func (per *GenericPeople) HirePeople(employee Genericperson) []Genericperson {
 }
 
 func InitializeBoomFilter() *boom.StableBloomFilter {
+	//return boom.NewDefaultStableBloomFilter(10000, 0.01)
 	return boom.NewDefaultStableBloomFilter(10000, 0.01)
 }
 
@@ -29,11 +30,23 @@ var sbf *boom.StableBloomFilter
 
 func Searchstruc(company GenericPeople) string {
 	sbf = InitializeBoomFilter()
+	i := 0
+	var dd string
+
 	for _, pl := range company.Group {
-		fmt.Println("ID: ", pl.PersonId, "Name: ", pl.Name, "Age: ", pl.Age)
+
+		//	fmt.Println("ID: ", pl.PersonId, "Name: ", pl.Name, "Age: ", pl.Age)
+
 		sbf.Add([]byte(pl.Name))
-		fmt.Println("")
+		if i == 999 {
+			dd = pl.Name
+
+		}
+		//	fmt.Println("")
+		i = i + 1
 	}
+	fmt.Println(i)
+	fmt.Println(dd)
 	return "done"
 
 }

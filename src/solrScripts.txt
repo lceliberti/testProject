@@ -1,0 +1,105 @@
+http://localhost:8983/solr/gettingstarted/update/extract?resource.name=C%3A%5CSOLR%5Csolr-6.4.1%5Cdocs%5Csolr-core%5Corg%5Capache%5Csolr%5Ccloud%5Crule%5Cclass-use%5CServerSnitchContext.html&literal.id=C%3A%5CSOLR%5Csolr-6.4.1%5Cdocs%5Csolr-core%5Corg%5Capache%5Csolr%5Ccloud%5Crule%5Cclass-use%5CServerSnitchContext.html
+
+
+
+$ curl 'http://localhost:8983/solr/techproducts/update/extract?literal.id=doc3&commit=true&Name=louietest' -F "myfile=@./example/exampledocs/test.docx"
+
+
+ bin/post -c techproducts example/exampledocs/solr-word.pdf -params "literal.id=a"
+
+ bin/post -c techproducts example/exampledocs/test2.docx -params "literal.id=doc15&literal.name=mytest&uprefix=attr_"
+
+Params: solr.URLParamMap{
+			"q": []string{"text:*test*"},
+			/*"facet.field": []string{"accepts_4x4s", "accepts_bicycles"},
+			"facet":       []string{"true"},*/
+		},
+
+
+
+
+
+ http://localhost:8983/solr/techproducts/suggest?suggest=true&suggest.build=true&suggest.dictionary=mySuggestion&hl=true&hl.snippets=20&hl.fl=manu&hl.fl=content&hl.fl=name&hl.usePhraseHighlighter=true&wt=json&suggest.q=Can
+
+<filter class="solr.NGramFilterFactory" minGramSize="2" maxGramSize="3" />
+
+http://localhost:8983/solr/techproducts/update/extract?literal.id=doc43&commit=true&literal.Name=louietest2 -F "myfile=@./example/exampledocs/test2.docx"
+
+
+{"id":"doc3","name":{"set":"LouieCeliberti22"}}
+
+
+http://localhost:8983/solr/techproducts/update/json?commit=true
+
+[{"id":"doc3","name":{"set":"LouieCeliberti669"}}]
+
+
+   <requestParsers enableRemoteStreaming="true" />
+http://localhost:8983/solr/techproducts/update/extract?stream.file=./test2.docx&literal.id=5&commit=true 
+http://localhost:8983/solr/techproducts/update/extract?stream.file=./dealfolders/test23.docx&literal.id=doc52&literal.name=louieceliberti25&literal.manu=mymanufacturer&commit=true
+
+(File needs to be in ...\solr-6.4.1\server)
+
+
+
+	var upd updatedoc
+	upd = updatedoc{Id: "doc55",
+		Name: Name{Set: "louiecelibertiupdatedGO Gators!!!"},
+	}
+
+type Name struct {
+	Set string `json:"set"`
+}
+
+type updatedoc struct {
+	Id   string `json:"id"`
+	Name Name   `json:"name"`
+}
+
+type updatedocs []updatedoc
+
+var f interface{}
+
+f = map[string]interface{}{
+    "Name": "Wednesday",
+    "Age":  6,
+    "Parents": []interface{}{
+        "Gomez",
+        "Morticia",
+    },
+}
+
+type Item struct {
+    Title string
+    URL   string
+}
+
+type Response struct {
+    Data struct {
+        Children []struct {
+            Data Item
+        }
+    }
+}
+
+highlighting fields that matched
+http://localhost:8983/solr/techproducts/select?q=dea&wt=xml&debugQuery=true&hl=true&hl.snippets=20&hl.fl=text&hl.usePhraseHighlighter=true
+
+
+ <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+      <analyzer type="index">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.NGramFilterFactory" minGramSize="2" maxGramSize="3" />
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
+        <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>

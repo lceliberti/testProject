@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/sha1"
 	"datautil"
+	"encoding/csv"
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
@@ -13,7 +14,7 @@ import (
 	"log"
 	"mathutil"
 	"net/http"
-	"strconv"
+	"os"
 	"strings"
 	"time"
 
@@ -70,17 +71,18 @@ func (per *People) HirePeople(employee person) []person {
 	return per.Group
 }
 
+/*
 func Searchstruc(company People) string {
 
 	for _, pl := range company.Group {
-		fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
+		fmt.Println("ID:2 ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
 
 		fmt.Println("")
 	}
 	return "done"
 
 }
-
+*/
 type MyBoxItem struct {
 	Name string
 }
@@ -96,7 +98,10 @@ func (box *MyBox) AddItem(item MyBoxItem) []MyBoxItem {
 }
 
 func main() {
-	var myToDoID uint64
+	arg := os.Args[1]
+
+	fmt.Println(arg)
+
 	fmt.Printf("Hello, world. Now in hello.go\n")
 
 	fmt.Printf("Calling reverse function.\n")
@@ -112,30 +117,34 @@ func main() {
 
 	myint := stringutil.HashThisString(employeeName)
 
-	employee := person{personId: myint, name: employeeName, age: 45}
-	newemployee := datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 45}
-
-	fmt.Println(employee.name)
-	fmt.Println(employee.age)
+	//employee := datautil.Genericperson{personId: myint, name: employeeName, age: 45}
+	employee := datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 45}
+	/*
+		fmt.Println(employee.name)
+		fmt.Println(employee.age)
+	*/
 	/*Declare a ppl as a slice of persons
 	ppl := []person{}
 	*/
 	/*Declare a company as a group of ppl (slice)*/
+	company := datautil.GenericPeople{}
+	/*********************
 
-	company := People{}
-	company.HirePeople(employee)
-
+			company.HirePeople(employee)
+	******/
 	newcompany := datautil.GenericPeople{}
-	newcompany.HirePeople(newemployee)
+	/******
+		newcompany.HirePeople(newemployee)
 
-	employeeName = "Raymond James"
+		employeeName = "Raymond James"
 
-	myint = stringutil.HashThisString(employeeName)
+		myint = stringutil.HashThisString(employeeName)
 
-	employee = person{personId: myint, name: employeeName, age: 12}
-	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
-
+		employee = person{personId: myint, name: employeeName, age: 12}
+		newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
+	********************/
 	/*Hiring People (adding them to the company slice)*/
+	/************
 	company.HirePeople(employee)
 	company.HirePeople(employee)
 	employeeName = "Cheryl Celiberti"
@@ -164,24 +173,50 @@ func main() {
 	newemployee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
 
 	company.HirePeople(employee)
+	*/
+	file, err := os.Open("test.csv")
+	if err != nil {
+		fmt.Println("Error", err)
+		return
+	}
+	defer file.Close()
+
+	reader := csv.NewReader(file)
+	record, err := reader.ReadAll()
+	if err != nil {
+		fmt.Println("Error", err)
+	}
+
+	for value := range record { // for i:=0; i<len(record)
+		//		fmt.Println("", record[value])
+		employeeName = strings.Join(record[value], "")
+
+		myint = stringutil.HashThisString(employeeName)
+
+		//employee = datautil.Genericperson{personId: myint, name: employeeName, age: 2}
+		employee = datautil.Genericperson{PersonId: myint, Name: employeeName, Age: 12}
+
+		company.HirePeople(employee)
+
+	}
 
 	fmt.Println("How many people are in the company:")
 	fmt.Println(len(company.Group))
 
-	fmt.Println("Printing people and ages in company from function. Pre-Sort")
-	Searchstruc(company)
-	sort.Sort(ByAge(company.Group))
-	fmt.Println("Printing people and ages in company from function. post-Sort")
-	Searchstruc(company)
+	//	fmt.Println("Printing people and ages in company from function. Pre-Sort")
+	//	Searchstruc(company)
+	//sort.Sort(ByAge(company.Group))
+	//	fmt.Println("Printing people and ages in company from function. post-Sort")
+	//	Searchstruc(company)
 
 	/*Hiring People in the new company using package functions*/
-	newcompany.HirePeople(newemployee)
+	//newcompany.HirePeople(newemployee)
 	fmt.Println("Printing people and ages of the new Company from function. Pre-Sort")
 	/*Using package search function*/
-	datautil.Searchstruc(newcompany)
+	datautil.Searchstruc(company)
 	sort.Sort(datautil.GenericByAge(newcompany.Group))
 	fmt.Println("Printing people and ages of the new Company from function. Post-Sort")
-	datautil.Searchstruc(newcompany)
+	//	datautil.Searchstruc(newcompany)
 
 	/*Creating an item*/
 	item1 := MyBoxItem{Name: "Test Item 1"}
@@ -215,10 +250,11 @@ func main() {
 		sbf.Add([]byte(employeeName))
 	*/
 
-	datautil.TestBoomFilter("Hello")
+	datautil.TestBoomFilter(arg)
 	datautil.TestBoomFilter(employeeName)
 
-	idx := bloomindex.NewShardedIndex(0.01, 4)
+	idx := bloomindex.NewShardedIndex(.000000001, 10)
+	//idx := bloomindex.NewShardedIndex(.01, 4)
 
 	/*populate BloomIndex, by looking through company*/
 	//	var toks []uint32
@@ -227,48 +263,107 @@ func main() {
 	var m map[uint64]uint64
 	m = make(map[uint64]uint64)
 	var iter uint64
+	/***************************
+		iter = 0
+		for _, pl := range company.Group {
+			m[iter] = pl.personId
+			fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
+			tokens := strings.Fields(pl.name)
+			var toks []uint32
+
+			for _, t := range tokens {
+				fmt.Println("Name: ", pl.name, "token: ", t)
+				toks = append(toks, crc32.ChecksumIEEE([]byte(t)))
+			}
+			idx.AddDocument(toks)
+			fmt.Println("Docid:", pl.name)
+			fmt.Println(crc32.ChecksumIEEE([]byte(pl.name)))
+			iter = iter + 1
+		}
+	*********/
+
 	iter = 0
 	for _, pl := range company.Group {
-		m[iter] = pl.personId
-		fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
-		tokens := strings.Fields(pl.name)
+		m[iter] = pl.PersonId
+		//fmt.Println("ID: ", pl.personId, "Name: ", pl.name, "Age: ", pl.age)
+		tokens := strings.Fields(pl.Name)
 		var toks []uint32
 
 		for _, t := range tokens {
-			fmt.Println("Name: ", pl.name, "token: ", t)
+			//fmt.Println("Name: ", pl.name, "token: ", t)
+			t = strings.Replace(t, ",", "", 5)
 			toks = append(toks, crc32.ChecksumIEEE([]byte(t)))
+			for ngram, frequency := range Parse(t, 10) {
+				frequency = frequency + frequency
+				//				fmt.Println("Name: ", pl.name, "token: ", ngram)
+				ngram = strings.Replace(ngram, " ", "", 5)
+				toks = append(toks, crc32.ChecksumIEEE([]byte(ngram)))
+			}
+
 		}
 		idx.AddDocument(toks)
-		fmt.Println("Docid:", pl.name)
-		fmt.Println(crc32.ChecksumIEEE([]byte(pl.name)))
+		//fmt.Println("Docid:", pl.name)
+		//fmt.Println(crc32.ChecksumIEEE([]byte(pl.name)))
 		iter = iter + 1
 	}
 
 	var toks []uint32
-	qstr := "James"
-	query := []string{qstr}
+	qstr := arg
+	//toks = append(toks, crc32.ChecksumIEEE([]byte("Fund")))
+	toks = append(toks, crc32.ChecksumIEEE([]byte(qstr)))
 
-	for _, q := range query {
-		toks = append(toks, crc32.ChecksumIEEE([]byte(q)))
-	}
+	//toks = append(toks, crc32.ChecksumIEEE([]byte("Premi")))
 
+	/*
+		query := []string{qstr}
+
+
+		for _, q := range query {
+			toks = append(toks, crc32.ChecksumIEEE([]byte(q)))
+		}
+	*/
 	ids := idx.Query(toks)
 
 	fmt.Println("Printing ids returned from", qstr)
 	fmt.Println("length of ids: ", len(ids))
 	fmt.Println(ids)
 	fmt.Println(ids[0])
-	for _, doc := range ids {
 
-		fmt.Println("printing docs for", qstr)
-		fmt.Println(strconv.FormatUint(uint64(doc), 16))
-		fmt.Println(m[uint64(doc)])
+	var myToDoID uint64
+	var count int
+	count = 0
+	for _, doc := range ids {
+		/*
+			fmt.Println("printing docs for", qstr)
+			fmt.Println(strconv.FormatUint(uint64(doc), 16))
+			fmt.Println(m[uint64(doc)])
+		*/
 		myToDoID = m[uint64(doc)]
-		fmt.Println("Calling getToDos for: ", myToDoID)
+
+		//	fmt.Println("Calling getToDos for: ", myToDoID)
 		getToDos(myToDoID)
+		count = count + 1
+	}
+	fmt.Println("Count of tods : ", count)
+	/******* Calling findToDo*****/
+}
+
+func Parse(text string, n int) map[string]int {
+	chars := []rune(strings.Repeat(" ", n))
+	table := make(map[string]int)
+
+	for _, letter := range strings.Join(strings.Fields(text), " ") + " " {
+		chars = append(chars[1:], letter)
+
+		ngram := string(chars)
+		if _, ok := table[ngram]; ok {
+			table[ngram]++
+		} else {
+			table[ngram] = 1
+		}
 	}
 
-	/******* Calling findToDo*****/
+	return table
 }
 
 func getToDos(myToDoID uint64) {
@@ -315,7 +410,8 @@ func getToDos(myToDoID uint64) {
 	}
 
 	for _, tasks := range todos {
-		fmt.Println("ID: ", tasks.Id, "Name: ", tasks.Name, "Complete: ", tasks.Completed)
+		//	fmt.Println("ID: ", tasks.Id, "Name: ", tasks.Name, "Complete: ", tasks.Completed)
+		fmt.Println(tasks.Name)
 
 	}
 

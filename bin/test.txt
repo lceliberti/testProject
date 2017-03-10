@@ -1,0 +1,1913 @@
+Hello, world. Now in hello.go
+Calling reverse function.
+
+Hello, Go!Calling Mulitiplication Function
+
+2
+Calling Division Function
+
+5
+Louie Celiberti
+45
+How many people are in the company:
+10000
+Printing people and ages of the new Company from function. Pre-Sort
+ID:  1119504487364737214 Name:  Michigan Bell Telephone Co. Age:  12
+
+Printing people and ages of the new Company from function. Post-Sort
+ID:  1119504487364737214 Name:  Michigan Bell Telephone Co. Age:  12
+
+Printing Items
+2
+Printing Hash value
+sha1 this string cf23df2207d99a74fbe169e3eba035e633b65d94
+Printing Hash Int value
+1119504487364737214
+This is my bloom filter codes
+Calling from functino,does NOT contain:  Hello
+Calling from functino, index contains:  Michigan Bell Telephone Co.
+Printing ids returned from Funds
+length of ids:  1880
+[4 64 69 101 172 190 197 245 254 387 671 714 745 750 760 775 846 891 904 1112 1114 1139 1142 1167 1178 1205 1207 1243 1244 1305 1314 1343 1387 1388 1597 1796 2166 2183 2202 2815 4659 4813 5247 5248 5272 5280 5320 5356 5359 5548 6230 6302 6303 6326 6397 6408 6463 6507 6520 6529 6560 6589 6824 6869 6890 6948 7027 7033 7164 7167 7279 7377 7490 8468 8556 8576 8592 8679 8680 8792 9028 9140 9229 9250 9401 9453 9499 9519 9539 9566 9584 9591 9622 9641 9651 9724 9765 9818 36 191 193 198 252 363 397 456 457 458 505 1066 1116 1177 1297 1317 1391 1568 1616 1917 1938 1942 2051 2119 2121 2122 2123 2134 2207 2302 2359 2543 2816 2835 3017 3057 3060 3116 3189 3190 4421 4446 4511 4543 4618 4621 4629 4640 4641 4643 4689 4705 4772 4800 5166 5182 5204 5468 5492 5493 5494 5503 5565 6266 6272 6274 6406 6428 6467 6476 6534 6538 6541 6543 6544 6545 6633 6938 7028 7332 7365 7366 7367 7368 7369 7370 7371 7372 7373 7374 7410 7521 7523 8372 8470 8472 8473 8474 8475 8476 8478 8480 8584 8602 8620 8681 8794 8795 8796 8797 8798 8799 8800 8801 8802 8803 8804 8805 8806 8807 8808 8809 8810 8811 8812 8813 8814 8815 8816 8817 8818 8819 8820 8821 8822 8823 8824 8825 8826 8827 8828 8829 8830 9051 9196 9277 9324 9353 9428 9433 9479 9516 9567 9629 9834 9882 9893 199 427 982 1111 1536 2817 2818 2819 2820 2821 2822 2823 2824 2825 2826 2827 2828 2829 2830 2831 2832 2833 2834 2836 2837 2838 2839 2840 2841 2842 2843 2844 2845 2846 2847 2848 2849 2850 2851 2852 2853 2854 2855 2856 2857 2858 2859 2860 2861 2862 2863 2864 2865 2866 2867 2868 2869 2870 2871 2872 2873 2874 2875 2876 2877 2878 2879 2880 2881 2882 2883 2884 2885 2886 2887 2888 2889 2890 2891 2892 2893 2894 2895 2896 2897 2898 2899 2900 2901 2902 2903 2904 2905 2906 2907 2908 2909 2910 2911 2912 2913 2914 2915 2916 2917 2918 2919 2920 2921 2922 2923 2924 2925 2926 2927 2928 2929 2930 2931 2932 2933 2934 2935 2936 2937 2938 2939 2940 2941 2942 2943 2944 2945 2946 2947 2948 2949 2950 2951 2952 2953 2954 2955 2956 2957 2958 2959 2960 2961 2962 2963 2964 2965 2966 2967 2968 2969 2970 2971 2972 2973 2974 2975 2976 2977 2978 2979 2980 2981 2982 2983 2984 2985 2986 2987 2988 2989 2990 2991 2992 2993 2994 2995 2996 2997 2998 2999 3000 3001 3002 3003 3004 3005 3006 3007 3008 3009 3010 3011 3012 3013 3014 3015 3016 3018 3019 3020 3021 3022 3023 3024 3025 3026 3027 3028 3029 3030 3031 3032 3033 3034 3035 3036 3037 3038 3039 3040 3041 3042 3043 3044 3045 3046 3047 3048 3049 3050 3051 3052 3053 3054 3055 3056 3058 3059 3061 3062 3063 3064 3065 3066 3067 3068 3069 3070 3071 3072 3073 3074 3075 3076 3077 3078 3079 3080 3081 3082 3083 3084 3085 3086 3087 3088 3089 3090 3091 3092 3093 3094 3095 3096 3097 3098 3099 3100 3101 3102 3103 3104 3105 3106 3107 3108 3109 3110 3111 3112 3113 3114 3115 3117 3118 3119 3120 3121 3122 3123 3124 3125 3126 3127 3128 3129 3130 3131 3132 3133 3134 3135 3136 3137 3138 3139 3140 3141 3142 3143 3144 3145 3146 3147 3148 3149 3150 3151 3152 3153 3154 3155 3156 3157 3158 3159 3160 3161 3162 3163 3164 3165 3166 3167 3168 3169 3170 3171 3172 3173 3174 3175 3176 3177 3178 3179 3180 3181 3182 3183 3184 3185 3186 3187 3188 3191 3192 3193 3194 3195 3196 3197 3198 3199 3200 3201 3202 3203 3204 3205 3206 3207 3208 3209 3210 3211 3212 3213 3214 3215 3216 3217 3218 3219 3220 3221 3222 3223 3224 3225 3226 3227 3228 3229 3230 3231 3232 3233 3234 3235 3236 3237 3238 3239 3240 3241 3242 3243 3244 3245 3246 3247 3248 3249 3250 3251 3252 3253 3254 3255 3256 3257 3258 3259 3260 3261 3262 3263 3264 3265 3266 3267 3268 3269 3270 3271 3272 3273 3274 3275 3276 3277 3278 3279 3280 3281 3282 3283 3284 3285 3286 3287 3288 3289 3290 3291 3292 3293 3294 3295 3296 3297 3298 3299 3300 3301 3302 3303 3304 3305 3306 3307 3308 3309 3310 3311 3312 3313 3314 3315 3316 3317 3318 3319 3320 3321 3322 3323 3324 3325 3326 3327 3328 3329 3330 3331 3332 3333 3334 3335 3336 3337 3338 3339 3340 3341 3342 3343 3344 3345 3346 3347 3348 3349 3350 3351 3352 3353 3354 3355 3356 3357 3358 3359 3360 3361 3362 3363 3364 3365 3366 3367 3368 3369 3370 3371 3372 3373 3374 3375 3376 3377 3378 3379 3380 3381 3382 3383 3384 3385 3386 3387 3388 3389 3390 3391 3392 3393 3394 3395 3396 3397 3398 3399 3400 3401 3402 3403 3404 3405 3406 3407 3408 3409 3410 3411 3412 3413 3414 3415 3416 3417 3418 3419 3420 3421 3422 3423 3424 3425 3426 3427 3428 3429 3430 3431 3432 3433 3434 3435 3436 3437 3438 3439 3440 3441 3442 3443 3444 3445 3446 3447 3448 3449 3450 3451 3452 3453 3454 3455 3456 3457 3458 3459 3460 3461 3462 3463 3464 3465 3466 3467 3468 3469 3470 3471 3472 3473 3474 3475 3476 3477 3478 3479 3480 3481 3482 3483 3484 3485 3486 3487 3488 3489 3490 3491 3492 3493 3494 3495 3496 3497 3498 3499 3500 3501 3502 3503 3504 3505 3506 3507 3508 3509 3510 3511 3512 3513 3514 3515 3516 3517 3518 3519 3520 3521 3522 3523 3524 3525 3526 3527 3528 3529 3530 3531 3532 3533 3534 3535 3536 3537 3538 3539 3540 3541 3542 3543 3544 3545 3546 3547 3548 3549 3550 3551 3552 3553 3554 3555 3556 3557 3558 3559 3560 3561 3562 3563 3564 3565 3566 3567 3568 3569 3570 3571 3572 3573 3574 3575 3576 3577 3578 3579 3580 3581 3582 3583 3584 3585 3586 3587 3588 3589 3590 3591 3592 3593 3594 3595 3596 3597 3598 3599 3600 3601 3602 3603 3604 3605 3606 3607 3608 3609 3610 3611 3612 3613 3614 3615 3616 3617 3618 3619 3620 3621 3622 3623 3624 3625 3626 3627 3628 3629 3630 3631 3632 3633 3634 3635 3636 3637 3638 3639 3640 3641 3642 3643 3644 3645 3646 3647 3648 3649 3650 3651 3652 3653 3654 3655 3656 3657 3658 3659 3660 3661 3662 3663 3664 3665 3666 3667 3668 3669 3670 3671 3672 3673 3674 3675 3676 3677 3678 3679 3680 3681 3682 3683 3684 3685 3686 3687 3688 3689 3690 3691 3692 3693 3694 3695 3696 3697 3698 3699 3700 3701 3702 3703 3704 3705 3706 3707 3708 3709 3710 3711 3712 3713 3714 3715 3716 3717 3718 3719 3720 3721 3722 3723 3724 3725 3726 3727 3728 3729 3730 3731 3732 3733 3734 3735 3736 3737 3738 3739 3740 3741 3742 3743 3744 3745 3746 3747 3748 3749 3750 3751 3752 3753 3754 3755 3756 3757 3758 3759 3760 3761 3762 3763 3764 3765 3766 3767 3768 3769 3770 3771 3772 3773 3774 3775 3776 3777 3778 3779 3780 3781 3782 3783 3784 3785 3786 3787 3788 3789 3790 3791 3792 3793 3794 3795 3796 3797 3798 3799 3800 3801 3802 3803 3804 3805 3806 3807 3808 3809 3810 3811 3812 3813 3814 3815 3816 3817 3818 3819 3820 3821 3822 3823 3824 3825 3826 3827 3828 3829 3830 3831 3832 3833 3834 3835 3836 3837 3838 3839 3840 3841 3842 3843 3844 3845 3846 3847 3848 3849 3850 3851 3852 3853 3854 3855 3856 3857 3858 3859 3860 3861 3862 3863 3864 3865 3866 3867 3868 3869 3870 3871 3872 3873 3874 3875 3876 3877 3878 3879 3880 3881 3882 3883 3884 3885 3886 3887 3888 3889 3890 3891 3892 3893 3894 3895 3896 3897 3898 3899 3900 3901 3902 3903 3904 3905 3906 3907 3908 3909 3910 3911 3912 3913 3914 3915 3916 3917 3918 3919 3920 3921 3922 3923 3924 3925 3926 3927 3928 3929 3930 3931 3932 3933 3934 3935 3936 3937 3938 3939 3940 3941 3942 3943 3944 3945 3946 3947 3948 3949 3950 3951 3952 3953 3954 3955 3956 3957 3958 3959 3960 3961 3962 3963 3964 3965 3966 3967 3968 3969 3970 3971 3972 3973 3974 3975 3976 3977 3978 3979 3980 3981 3982 3983 3984 3985 3986 3987 3988 3989 3990 3991 3992 3993 3994 3995 3996 3997 3998 3999 4000 4001 4002 4003 4004 4005 4006 4007 4008 4009 4010 4011 4012 4013 4014 4015 4016 4017 4018 4019 4020 4021 4022 4023 4024 4025 4026 4027 4028 4029 4030 4031 4032 4033 4034 4035 4036 4037 4038 4039 4040 4041 4042 4043 4044 4045 4046 4047 4048 4049 4050 4051 4052 4053 4054 4055 4056 4057 4058 4059 4060 4061 4062 4063 4064 4065 4066 4067 4068 4069 4070 4071 4072 4073 4074 4075 4076 4077 4078 4079 4080 4081 4082 4083 4084 4085 4086 4087 4088 4089 4090 4091 4092 4093 4094 4095 4096 4097 4098 4099 4100 4101 4102 4103 4104 4105 4106 4107 4108 4109 4110 4111 4112 4113 4114 4115 4116 4117 4118 4119 4120 4121 4122 4123 4124 4125 4126 4127 4128 4129 4130 4131 4132 4133 4134 4135 4136 4137 4138 4139 4140 4141 4142 4143 4144 4145 4146 4147 4148 4149 4150 4151 4152 4153 4154 4155 4156 4157 4158 4159 4160 4161 4162 4163 4164 4165 4166 4167 4168 4169 4170 4171 4172 4173 4174 4175 4176 4177 4178 4179 4180 4181 4182 4183 4184 4185 4186 4187 4188 4189 4190 4191 4192 4193 4194 4195 4196 4197 4198 4199 4200 4201 4202 4203 4204 4205 4206 4207 4208 4209 4210 4211 4212 4213 4214 4215 4216 4217 4218 4219 4220 4221 4222 4223 4224 4225 4226 4227 4228 4229 4230 4231 4232 4233 4234 4235 4236 4237 4238 4239 4240 4241 4242 4243 4244 4245 4246 4247 4248 4249 4250 4251 4252 4253 4254 4255 4256 4257 4258 4259 4260 4261 4262 4263 4264 4265 4266 4267 4268 4269 4270 4271 4272 4273 4274 4275 4276 4277 4278 4279 4280 4281 4282 4283 4284 4285 4286 4287 4288 4289 4290 4291 4292 4293 4294 4295 4296 4297 4298 4299 4300 4301 4302 4303 4304 4305 4306 4307 4308 4309 4310 4311 4312 4313 4314 4315 4316 4317 4318 4319 4320 4321 4322 4323 4324 4325 4326 4327 4328 4329 4330 4331 4332 4333 4334 4335 4336 4337 4338 4339 4340 4341 4342 4343 4344 4345 4346 4347 4348 4349 4350 4351 4352 4353 4354 4355 4356 4357 4358 4359 4360 4361 4362 4363 4364 4365 4366 4367 4368 4369 4370 4371 4372 4373 4374 4375 4376 4377 4378 4379 4380 4381 4382 4383 4384 4385 4386 4387 4388 4389 4390 4391 4392 4393 4394 4395 4396 4397 4398 4399 4400 4401 4402 4403 4404 4405 4406 4407 4408 4409 4410 4411 4412 4413 4414 4415 4416 4417 4418 4419 4420 4422 4423 4424 4425 4426 4427 4443 4892 5139 5140 5141 5142 5143 5144 6622 6818 6819 6820 6821 7582 8793 8831 983]
+4
+Boston 1784 Funds
+Accessor Funds, Inc.
+Achievement Funds Trust
+Buttonwood Funds, Inc.
+Voya Variable Funds
+Aim Equity Funds
+Invesco Tax-Exempt Funds
+Alexander Hamilton Funds
+The Alger Funds
+American Beacon Funds
+Anthem Funds Trust
+Aquinas Funds, Inc.
+MTB Group Funds
+Allegiant Funds
+Arrow Funds
+Asia House Funds
+Oneamerica Funds, Inc.
+RBC Funds Trust
+Baird Funds, Inc.
+Benham Equity Funds
+Benham International Funds
+Berry Street Funds
+Berwyn Funds
+Bhirud Funds, Inc.
+Wachovia Municipal Funds
+Bishop Street Funds
+Aberdeen Investment Funds
+Blair William Funds
+Blanchard Funds
+Boulevard Funds
+Bradford Funds, Inc.
+Briar Funds Trust
+Deutsche Institutional Funds
+DWS Advisor Funds
+Christian Stewardship Funds
+RBC Funds, Inc.
+Commerce Funds
+PFM Funds
+Community Funds, Inc.
+Defined Asset Funds
+Strategic Funds, Inc.
+Eclipse Funds
+Excelsior Funds, Inc.
+Excelsior Funds Trust
+Fahnestock Funds
+Camelot Funds
+Federated Equity Funds
+Ffb Funds Trust
+FFTW Funds, Inc.
+First Funds
+First Union Funds
+Meeder Funds
+Meeder Advisor Funds
+FMB Funds, Inc.
+Forum Funds
+Fifth Third Funds
+Franklin Valuemark Funds
+Funds IV Trust
+GrandBanc, Inc.
+Invesco Investment Funds
+Gam Funds, Inc.
+Highland Funds II
+Govett Funds, Inc.
+Green Century Funds
+Griffin Funds, Inc.
+Investec Funds
+Hanover Funds, Inc.
+Harbor Funds
+Hennessy Funds Trust
+Hercules Funds Inc
+Mercury Funds II
+ICAP Funds, Inc.
+Miles Funds, Inc.
+Inventor Funds Inc
+IPS Funds
+IVY Funds
+Jaffray Funds, Inc.
+JPM Advisor Funds
+JPMorgan Institutional Funds
+Kemper Defined Funds
+Kent Funds
+KPM Funds, Inc.
+Lazard Funds, Inc.
+Lebenthal Funds, Inc.
+LKCM Funds
+Losantiville Funds
+Mackenzie Funds, Inc.
+MainStay Funds
+AMG Funds III
+Bnyia Funds Trust
+Marquis Funds
+BMO Funds, Inc.
+MassMutual Premier Funds
+Matthews International Funds
+Great-West Funds, Inc.
+Medalist Funds
+Mentor Funds
+Blackrock Funds II
+AARP Cash Investment Funds
+Aim Funds Group (Invesco Funds Group)
+AIM International Funds, Inc.
+AIM Tax Free Funds, Inc.
+The Alger Institutional Funds
+Amana Mutual Funds Trust
+American Funds American Balanced Fund, Inc.
+American Funds Income Series
+American Funds Tax Exempt Series I
+American Funds Tax Exempt Series II
+American Funds American Mutual Fund, Inc.
+Bea Investment Funds, Inc.
+Benham Capital Manager Funds
+Regions Morgan Keegan Select Funds
+Boston Co. Tax-Free Municipal Funds
+The Bramwell Funds, Inc.
+DWS Advisor Funds III
+American Funds Capital Income Builder, Inc.
+Summit Mutual Funds, Inc.
+Chubb Investment Funds, Inc.
+CIGNA Annuity Funds Group
+CIGNA Institutional Funds Group
+Columbia Funds International Trust
+Columbia Funds Trust I
+Columbia Funds Trust IV
+Columbia Funds Trust V
+Columbia Funds Trust VI
+Columbia Funds Management Co.
+Compass Capital Group of Funds
+Consulting Group Capital Markets Funds
+Cornerstone Group of Funds /VA
+CUNA Mutual Funds, Inc.
+Defined Asset Funds Corp Inc F
+Defined Asset Funds Corporate
+Defined Asset Funds Equity Inc
+Defined Asset Funds Florida Insured Series
+Defined Asset Funds Government
+Defined Asset Funds Govt Sec I
+Defined Asset Funds Municipal
+Defined Asset Funds Municipal Insured Series
+Defined Asset Funds Municipal State Series
+Delaware Group Ltd. Term Government Funds
+Diaz Verson Funds Inc
+Diversified Investors Funds Group I
+Dreyfus Equity Funds Inc
+Dreyfus Focus Funds, Inc.
+Dreyfus Growth & Value Funds, Inc.
+The Dreyfus/Laurel Funds, Inc.
+Dreyfus Laurel Funds Trust
+Dreyfus Laurel Tax Free Municipal Funds
+Dreyfus Wilshire Target Funds, Inc.
+Duff & Phelps Mutual Funds
+Provident Mutual Funds, Inc.
+Eaton Vance Mutual Funds Trust
+Premium Funds Growth & Income Portfolio
+ESC Strategic Funds, Inc.
+American Funds EuroPacific Growth Fund
+AIM Money Market Funds, Inc.
+First American Funds, Inc.
+Nuveen Investment Funds, Inc.
+First American Mutual Funds
+First Boston Investment Funds, Inc.
+First Investors Life Series Funds
+Flag Investors Series Funds, Inc.
+Flagship Admiral Funds Inc
+Flagship Tax Exempt Funds Trust
+Dreyfus Founders Funds, Inc.
+Franklin Custodian Funds, Inc.
+Freedom Group of Tax Exempt Funds
+Fremont Mutual Funds, Inc.
+Gabelli Equity Series Funds, Inc.
+Gabelli Global Series Funds, Inc.
+Gabelli Income Series Funds, Inc.
+Gabelli Investor Funds, Inc.
+Gabelli Money Market Funds
+Gabelli Series Funds, Inc.
+General Municipal Money Market Funds, Inc.
+Guardian Variable Contract Funds Inc
+Hanover Investment Funds Inc
+ConAm Realty Investors 81 LP
+Iai Investment Funds I Inc
+Iai Investment Funds Ii Inc
+Iai Investment Funds Iii Inc
+Iai Investment Funds Iv Inc
+Iai Investment Funds V Inc
+Iai Investment Funds Vi Inc
+Iai Investment Funds Vii Inc
+Iai Investment Funds Viii Inc
+Iai Retirement Funds Inc
+Atlantic Whitehall Funds Trust
+Ids Life Account Funds
+Independence Capital Group Of Funds Inc
+Independence One Mutual Funds
+Integrity Fund of Funds, Inc.
+Invesco Diversified Funds, Inc.
+Invesco Emerging Opportunity Funds, Inc.
+Invesco International Funds, Inc.
+Invesco Specialty Funds, Inc.
+Invesco Tax Free Income Funds Inc
+AIM Treasurers Series Funds, Inc.
+Invesco Variable Investment Funds Inc
+Federated Investment Series Funds, Inc.
+Jackson National Capital Management Funds
+Nomura Partners Funds, Inc.
+Jermyn Street Funds Inc
+JPMorgan Institutional Plus Funds
+Kemper Defined Funds Series 10
+Kemper Defined Funds Series 11
+Kemper Defined Funds Series 12
+Kemper Defined Funds Series 13
+Kemper Defined Funds Series 14
+Kemper Defined Funds Series 15
+Kemper Defined Funds Series 16
+Kemper Defined Funds Series 17
+Kemper Defined Funds Series 18
+Kemper Defined Funds Series 19
+Kemper Defined Funds Series 20
+Kemper Defined Funds Series 21
+Kemper Defined Funds Series 22
+Kemper Defined Funds Series 23
+Kemper Defined Funds Series 24
+Kemper Defined Funds Series 25
+Kemper Defined Funds Series 26
+Kemper Defined Funds Series 27
+Kemper Defined Funds Series 28
+Kemper Defined Funds Series 29
+Kemper Defined Funds Series 3
+Kemper Defined Funds Series 30
+Kemper Defined Funds Series 31
+Kemper Defined Funds Series 32
+Kemper Defined Funds Series 33
+Kemper Defined Funds Series 34
+Kemper Defined Funds Series 35
+Kemper Defined Funds Series 36
+Kemper Defined Funds Series 37
+Kemper Defined Funds Series 4 /il/
+Kemper Defined Funds Series 45
+Kemper Defined Funds Series 5
+Kemper Defined Funds Series 6
+Kemper Defined Funds Series 7
+Kemper Defined Funds Series 8
+Kemper Defined Funds Series 9
+Kemper Defined Funds State Fil
+Keystone Australia Funds Inc
+Landmark Institutional Funds I
+Lehman Brothers Funds, Inc.
+Liberty National Bank Funds
+Lincoln Advisor Funds Inc
+Longleaf Partners Funds Trust
+Loomis Sayles Funds I
+Lutheran Brotherhood Family of Funds
+Main Street Funds Inc
+Bnyia Mutual Funds Trust
+Masters Group of Mutual Funds
+Funds for Institutions Series
+Merrill Lynch Series Funds, Inc.
+BlackRock Variable Series Funds, Inc.
+AIM Variable Insurance Funds (Invesco Variable Insurance Fds)
+AIM Investment Securities Funds Invesco Money Market
+Reliastar Life Ins Co Of Ny Variable Annuity Funds A B & C
+Benham California Tax Free & Municipal Funds
+Canadian Imperial Bank Com Tr Co. Bahamas Settlement T 1740
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Se
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 1
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 11
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 2
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 3
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 4
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 5
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 6
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 7
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 8
+Defined Asset Funds Corp Inc Fd Cash Or Accretion Bd Ser 9
+Defined Asset Funds Corp Income Cash Or Accretion Bd Ser 10
+Defined Asset Funds Corp Income Fund Pref Stock Put Ser
+Defined Asset Funds Corp Income Fund Pref Stock Put Ser 1
+Defined Asset Funds Corp Income Fund Pref Stock Put Ser 2
+Defined Asset Funds Corp Income Fund Pref Stock Put Ser 3
+Defined Asset Funds Corp Income Fund Pref Stock Put Ser 4
+Defined Asset Funds Corp Income Fund Pref Stock Put Ser 6
+Defined Asset Funds Corporate Inc Fd Adj Rate Pfd Stk S
+Defined Asset Funds Corporate Inc Fd Adj Rate Pfd Stk Ser 2
+Defined Asset Funds Corporate Inc Fd Adj Rate Pfd Stk Ser 3
+Defined Asset Funds Corporate Inc Fd Adj Rate Pfd Stk Ser 4
+Defined Asset Funds Corporate Income Fd Insured Series 10
+Defined Asset Funds Corporate Income Fd Insured Series 17
+Defined Asset Funds Corporate Income Fd Insured Series 18
+Defined Asset Funds Corporate Income Fd Insured Series 5
+Defined Asset Funds Corporate Income Fd Interm Tem Ser
+Defined Asset Funds Corporate Income Fd Interm Term Ser 26
+Defined Asset Funds Corporate Income Fd Interm Term Ser 27
+Defined Asset Funds Corporate Income Fd Interm Term Ser 28
+Defined Asset Funds Corporate Income Fd Interm Term Ser 30
+Defined Asset Funds Corporate Income Fd Interm Term Ser 31
+Defined Asset Funds Corporate Income Fd Interm Term Ser 32
+Defined Asset Funds Corporate Income Fd Interm Term Ser 33
+Defined Asset Funds Corporate Income Fd Interm Term Ser 34
+Defined Asset Funds Corporate Income Fd Interm Term Ser 35
+Defined Asset Funds Corporate Income Fd Interm Term Ser 36
+Defined Asset Funds Corporate Income Fd Interm Term Ser 37
+Defined Asset Funds Corporate Income Fd Interm Term Ser 38
+Defined Asset Funds Corporate Income Fd Interm Term Ser 39
+Defined Asset Funds Corporate Income Fd Interm Term Ser 40
+Defined Asset Funds Corporate Income Fd Interm Term Ser 41
+Defined Asset Funds Corporate Income Fd Interm Term Ser 42
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 16
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 160
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 202
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 203
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 206
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 211
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 214
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 215
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 216
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 217
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 218
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 22
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 220
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 221
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 223
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 224
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 225
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 226
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 231
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 234
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 236
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 237
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 239
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 24
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 240
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 241
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 242
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 243
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 244
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 245
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 246
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 247
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 248
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 249
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 25
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 250
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 251
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 252
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 253
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 254
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 259
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 26
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 260
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 261
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 262
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 263
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 264
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 265
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 267
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 268
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 269
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 27
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 270
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 271
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 272
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 273
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 274
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 275
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 276
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 30
+Defined Asset Funds Corporate Income Fd Mon Pymt Ser 308
+Defined Asset Funds Corporate Income Fd Monthly Pymt Se
+Defined Asset Funds Corporate Income Fd Monthly Pymt Ser 305
+Defined Asset Funds Corporate Income Fd Preferred Stk Ser 6
+Defined Asset Funds Corporate Income Fund Collat Bond S
+Defined Asset Funds Corporate Income Fund Collat Bond Ser 8
+Defined Asset Funds Corporate Income Fund Gnma Series 1
+Defined Asset Funds Corporate Income Fund High Yield Se
+Defined Asset Funds Corporate Income Fund High Yield Ser 10
+Defined Asset Funds Corporate Income Fund High Yield Ser 11
+Defined Asset Funds Corporate Income Fund High Yield Ser 15
+Defined Asset Funds Corporate Income Fund High Yield Ser 16
+Defined Asset Funds Corporate Income Fund High Yield Ser 17
+Defined Asset Funds Corporate Income Fund High Yield Ser 18
+Defined Asset Funds Corporate Income Fund High Yield Ser 19
+Defined Asset Funds Corporate Income Fund High Yield Ser 20
+Defined Asset Funds Corporate Income Fund High Yield Ser 21
+Defined Asset Funds Corporate Income Fund High Yield Ser 22
+Defined Asset Funds Corporate Income Fund High Yield Ser 23
+Defined Asset Funds Corporate Income Fund High Yield Ser 24
+Defined Asset Funds Corporate Income Fund High Yield Ser 25
+Defined Asset Funds Corporate Income Fund High Yield Ser 26
+Defined Asset Funds Corporate Income Fund High Yield Ser 27
+Defined Asset Funds Corporate Income Fund High Yield Ser 28
+Defined Asset Funds Corporate Income Fund High Yield Ser 29
+Defined Asset Funds Corporate Income Fund High Yield Ser 6
+Defined Asset Funds Corporate Income Fund High Yield Ser 7
+Defined Asset Funds Corporate Income Fund High Yield Ser 8
+Defined Asset Funds Corporate Income Fund High Yield Ser 9
+Defined Asset Funds Corporate Income Fund Insd Ser 16
+Defined Asset Funds Corporate Income Fund Insured Serie
+Defined Asset Funds Corporate Income Fund Insured Series 1
+Defined Asset Funds Corporate Income Fund Insured Series 11
+Defined Asset Funds Corporate Income Fund Insured Series 12
+Defined Asset Funds Corporate Income Fund Insured Series 13
+Defined Asset Funds Corporate Income Fund Insured Series 14
+Defined Asset Funds Corporate Income Fund Insured Series 15
+Defined Asset Funds Corporate Income Fund Insured Series 2
+Defined Asset Funds Corporate Income Fund Insured Series 3
+Defined Asset Funds Corporate Income Fund Insured Series 4
+Defined Asset Funds Corporate Income Fund Insured Series 6
+Defined Asset Funds Corporate Income Fund Insured Series 7
+Defined Asset Funds Corporate Income Fund Insured Series 8
+Defined Asset Funds Corporate Income Fund Insured Series 9
+Defined Asset Funds Corporate Income Fund Interm Term S
+Defined Asset Funds Corporate Income Fund Interm Term Ser 29
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 182
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 186
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 194
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 195
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 196
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 197
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 212
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 213
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 219
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 222
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 238
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 255
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 256
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 257
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 258
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 266
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 277
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 278
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 279
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 280
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 281
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 282
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 283
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 284
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 285
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 286
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 287
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 288
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 289
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 290
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 291
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 292
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 293
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 294
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 295
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 296
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 297
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 298
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 299
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 300
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 301
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 302
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 303
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 304
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 306
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 307
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 309
+Defined Asset Funds Corporate Income Fund Mon Pymt Ser 311
+Defined Asset Funds Corporate Income Fund Select Series
+Defined Asset Funds Corporate Income Fund Select Series 12
+Defined Asset Funds Equity Inc Fd Blue Chip Stk Ser 2
+Defined Asset Funds Equity Inc Fd Concept Ser Ecolog Tr
+Defined Asset Funds Equity Inc Fd Concept Ser Ecolog Tr 1990
+Defined Asset Funds Equity Inc Fd Concept Ser Env Tech
+Defined Asset Funds Equity Inc Fd Concept Ser Env Tech Tr 2
+Defined Asset Funds Equity Inc Fd Concept Ser Health Ca
+Defined Asset Funds Equity Inc Fd Concept Ser Health Care Tr
+Defined Asset Funds Equity Inc Fd Concept Ser Natural G
+Defined Asset Funds Equity Inc Fd Concept Ser Natural Gas Tr
+Defined Asset Funds Equity Inc Fd Concept Ser New Europ
+Defined Asset Funds Equity Inc Fd Concept Ser New Europe Tr
+Defined Asset Funds Equity Inc Fd Concept Ser Rebuild A
+Defined Asset Funds Equity Inc Fd Concept Series Energy
+Defined Asset Funds Equity Inc Fd Concept Series Energy Tr
+Defined Asset Funds Equity Income Fd Concept Ser New In
+Defined Asset Funds Equity Income Fd Concept Ser Nw Invt Tr
+Defined Asset Funds Equity Income Fd Concept Series Foo
+Defined Asset Funds Equity Income Fd Concept Series Food Fd
+Defined Asset Funds Equity Income Fd Index Ser S&p 500
+Defined Asset Funds Equity Income Fd Index Ser S&p 500 Tr 2
+Defined Asset Funds Equity Income Fd Utility Com Stk Se
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 1
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 14
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 15
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 2
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 3
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 4
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 5
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 6
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 7
+Defined Asset Funds Equity Income Fd Utility Com Stk Ser 8
+Defined Asset Funds Equity Income Fd Utility Stock Ser
+Defined Asset Funds Equity Income Fd Utility Stock Ser 9
+Defined Asset Funds Equity Income Fund Utility Stk Ser
+Defined Asset Funds Equity Income Fund Utility Stock Se
+Defined Asset Funds Equity Income Fund Utility Stock Ser 10
+Defined Asset Funds Equity Income Fund Utility Stock Ser 11
+Defined Asset Funds Equity Income Fund Utility Stock Ser 12
+Defined Asset Funds Equity Income Fund Utility Stock Ser 13
+Defined Asset Funds Florida Insured Series 2
+Defined Asset Funds Florida Insured Series 3
+Defined Asset Funds Government Sec Income Fd Gnma Serie
+Defined Asset Funds Government Sec Income Fd Gnma Series 1t
+Defined Asset Funds Government Secruities Inc Fd Gnma Ser 1u
+Defined Asset Funds Government Securities Fd Gnma Ser D
+Defined Asset Funds Government Securities Inc Fd Gnma S
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 0
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 12
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 13
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 14
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 16
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 17
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1a
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1b
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1c
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1d
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1e
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1f
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1g
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1h
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1i
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1j
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1k
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1l
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1m
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1n
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1o
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1p
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1q
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1r
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 1s
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 2
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 22
+Defined Asset Funds Government Securities Inc Fd Gnma Ser 25
+Defined Asset Funds Government Securities Inc Fd Gnma Ser C
+Defined Asset Funds Government Securities Inc Fd Gnma Ser E
+Defined Asset Funds Government Securities Inc Fd Gnma Ser F
+Defined Asset Funds Government Securities Inc Fd Gnma Ser G
+Defined Asset Funds Government Securities Inc Fd Gnma Ser H
+Defined Asset Funds Government Securities Inc Fd Gnma Ser I
+Defined Asset Funds Government Securities Inc Fd Gnma Ser J
+Defined Asset Funds Government Securities Inc Fd Gnma Ser K
+Defined Asset Funds Government Securities Inc Fd Gnma Ser L
+Defined Asset Funds Government Securities Inc Fd Gnma Ser M
+Defined Asset Funds Government Securities Inc Fd Gnma Ser N
+Defined Asset Funds Government Securities Inc Fd Gnma Ser P
+Defined Asset Funds Government Securities Inc Fd Gnma Ser Q
+Defined Asset Funds Government Securities Inc Fd Gnma Ser R
+Defined Asset Funds Government Securities Inc Fd Gnma Ser S
+Defined Asset Funds Government Securities Inc Fd Gnma Ser T
+Defined Asset Funds Government Securities Inc Fd Gnma Ser U
+Defined Asset Funds Government Securities Inc Fd Gnma Ser V
+Defined Asset Funds Government Securities Inc Fd Gnma Ser W
+Defined Asset Funds Government Securities Inc Fd Gnma Ser X
+Defined Asset Funds Government Securities Inc Fd Gnma Ser Y
+Defined Asset Funds Government Securities Inc Fd Gnma Ser Z
+Defined Asset Funds Govt Sec Inc Fd Mon Pymt Us Treas S
+Defined Asset Funds Govt Sec Inc Fd Us Trea Accum Ser A
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Ser
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Ser 1
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Ser 10
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Ser 9
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Seri
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Series 11
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Series 2
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Series 3
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Series 4
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Series 6
+Defined Asset Funds Govt Sec Income Fd Freddie Mac Series 7
+Defined Asset Funds Govt Secs Income Fund Freddie Mac Ser 8
+Defined Asset Funds Govt Securities Inc Fd Freddie Mac
+Defined Asset Funds Govt Securities Inc Fd Freddie Mac Ser 5
+Defined Asset Funds Govt Securities Inc Fd Us Govt Bd S
+Defined Asset Funds Govt Securities Inc Fd Us Govt Bd Ser 1
+Defined Asset Funds Govt Securities Inc Fd Us Govt Bd Ser 2
+Defined Asset Funds Govt Securities Inc Fd Us Govt Bd Ser 4
+Defined Asset Funds International Bd Fd Multicurrency S
+Defined Asset Funds International Bd Fd Multicurrency Ser 25
+Defined Asset Funds Intl Bd Fd Canadian Dol Bds Ser 10
+Defined Asset Funds Intl Bd Fd Multi Currency Ser 21
+Defined Asset Funds Intl Bd Fd Multi Currency Ser 22
+Defined Asset Funds Intl Bd Fd Multi Currency Ser 23
+Defined Asset Funds Intl Bd Fd Multi Currency Ser 26
+Defined Asset Funds Intl Bond Fund Multi Currency Serie
+Defined Asset Funds Intl Bond Fund Multi Currency Series
+Defined Asset Funds Liberty Street Tr Mun Mon Pymt Ser
+Defined Asset Funds Liberty Street Tr Mun Mon Pymt Ser 9
+Defined Asset Funds Liberty Street Trust Mun Mon Pymt Ser 1
+Defined Asset Funds Liberty Street Trust Mun Mon Pymt Ser 2
+Defined Asset Funds Liberty Street Trust Mun Mon Pymt Ser 3
+Defined Asset Funds Liberty Street Trust Mun Mon Pymt Ser 4
+Defined Asset Funds Liberty Street Trust Mun Mon Pymt Ser 5
+Defined Asset Funds Liberty Street Trust Mun Mon Pymt Ser 7
+Defined Asset Funds Mun Invt Tr Fd Amt Mon Pymt Ser 16
+Defined Asset Funds Mun Invt Tr Fd Amt Mon Pymt Ser 17
+Defined Asset Funds Mun Invt Tr Fd Amt Mon Pymt Ser 18
+Defined Asset Funds Mun Invt Tr Fd Amt Mon Pymt Ser 19
+Defined Asset Funds Mun Invt Tr Fd Amt Mon Pymt Ser 20
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 1
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 10
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 11
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 12
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 13
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 14
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 15
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 16
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 17
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 18
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 19
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 2
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 20
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 21
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 22
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 23
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 24
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 25
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 26
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 27
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 28
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 29
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 3
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 30
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 4
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 5
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 6
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 7
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 8
+Defined Asset Funds Mun Invt Tr Fd Multistate Series 9
+Defined Asset Funds Municipal Insured Series 2
+Defined Asset Funds Municipal Insured Series 3
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 551
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 552
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 553
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 554
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 555
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 556
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 557
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 558
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 559
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 560
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 561
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 562
+Defined Asset Funds Municipal Inv Tr Fd Mon Pymt Ser 563
+Defined Asset Funds Municipal Investment Trust Fd Put S
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 10
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 3
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 4
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 5
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 6
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 7
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 8
+Defined Asset Funds Municipal Investment Trust Fd Put Ser 9
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 15
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 2
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 3
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 4
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 5
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 6
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 7
+Defined Asset Funds Municipal Invt Tr Fd Amt Mon Pymt Ser 8
+Defined Asset Funds Municipal Invt Tr Fd California Ser 1
+Defined Asset Funds Municipal Invt Tr Fd California Ser 13
+Defined Asset Funds Municipal Invt Tr Fd California Ser 14
+Defined Asset Funds Municipal Invt Tr Fd California Ser 15
+Defined Asset Funds Municipal Invt Tr Fd California Ser 16
+Defined Asset Funds Municipal Invt Tr Fd California Ser 18
+Defined Asset Funds Municipal Invt Tr Fd California Ser 19
+Defined Asset Funds Municipal Invt Tr Fd California Ser 20
+Defined Asset Funds Municipal Invt Tr Fd California Ser 22
+Defined Asset Funds Municipal Invt Tr Fd California Ser 23
+Defined Asset Funds Municipal Invt Tr Fd California Ser 24
+Defined Asset Funds Municipal Invt Tr Fd California Ser 30
+Defined Asset Funds Municipal Invt Tr Fd California Ser 32
+Defined Asset Funds Municipal Invt Tr Fd California Ser 33
+Defined Asset Funds Municipal Invt Tr Fd California Ser 35
+Defined Asset Funds Municipal Invt Tr Fd California Ser 36
+Defined Asset Funds Municipal Invt Tr Fd California Ser 37
+Defined Asset Funds Municipal Invt Tr Fd California Ser 38
+Defined Asset Funds Municipal Invt Tr Fd California Ser 39
+Defined Asset Funds Municipal Invt Tr Fd California Ser 40
+Defined Asset Funds Municipal Invt Tr Fd California Ser 41
+Defined Asset Funds Municipal Invt Tr Fd California Ser 42
+Defined Asset Funds Municipal Invt Tr Fd California Ser 43
+Defined Asset Funds Municipal Invt Tr Fd California Ser 6
+Defined Asset Funds Municipal Invt Tr Fd California Ser 7
+Defined Asset Funds Municipal Invt Tr Fd Fl Insured Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Ins Interm Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Ins Interm Ser 2
+Defined Asset Funds Municipal Invt Tr Fd Insd Interm Ser 3
+Defined Asset Funds Municipal Invt Tr Fd Insd Interm Ser 4
+Defined Asset Funds Municipal Invt Tr Fd Insd Interm Ser 5
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 1
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 10
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 100
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 101
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 102
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 103
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 104
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 105
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 106
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 107
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 108
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 109
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 11
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 110
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 111
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 112
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 113
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 114
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 115
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 116
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 117
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 118
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 119
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 12
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 120
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 121
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 122
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 123
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 124
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 125
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 126
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 127
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 128
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 129
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 13
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 130
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 131
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 132
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 133
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 134
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 135
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 136
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 137
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 138
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 139
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 14
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 140
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 141
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 142
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 143
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 144
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 145
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 146
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 147
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 148
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 149
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 15
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 150
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 151
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 152
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 153
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 154
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 155
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 156
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 157
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 158
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 159
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 16
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 160
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 161
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 162
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 163
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 164
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 165
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 166
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 167
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 168
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 17
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 171
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 173
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 175
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 176
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 177
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 178
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 179
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 18
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 180
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 181
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 182
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 183
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 184
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 185
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 186
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 187
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 188
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 189
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 19
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 2
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 20
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 21
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 22
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 23
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 24
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 25
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 26
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 27
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 28
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 29
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 3
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 30
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 31
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 32
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 33
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 34
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 35
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 36
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 37
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 38
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 39
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 4
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 40
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 41
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 42
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 43
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 44
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 45
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 46
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 47
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 48
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 49
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 5
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 50
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 51
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 52
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 53
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 54
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 55
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 56
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 57
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 58
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 59
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 6
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 60
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 61
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 62
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 63
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 64
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 65
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 66
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 67
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 68
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 69
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 7
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 70
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 71
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 72
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 73
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 74
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 75
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 76
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 77
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 78
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 79
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 8
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 80
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 81
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 82
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 83
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 84
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 85
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 86
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 87
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 88
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 89
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 9
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 90
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 91
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 92
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 93
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 94
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 95
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 96
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 97
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 98
+Defined Asset Funds Municipal Invt Tr Fd Insured Series 99
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 100
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 101
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 102
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 103
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 104
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 105
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 106
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 108
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 109
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 110
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 111
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 112
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 113
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 114
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 115
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 116
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 117
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 118
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 119
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 120
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 121
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 122
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 123
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 124
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 125
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 126
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 127
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 128
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 129
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 130
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 131
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 132
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 133
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 134
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 135
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 136
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 137
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 138
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 139
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 140
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 141
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 142
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 143
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 144
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 145
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 146
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 147
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 148
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 149
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 150
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 151
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 152
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 153
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 154
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 155
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 156
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 157
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 158
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 159
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 160
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 161
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 162
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 163
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 164
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 165
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 166
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 167
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 168
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 169
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 170
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 171
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 172
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 173
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 174
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 175
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 176
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 177
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 178
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 179
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 180
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 181
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 182
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 183
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 184
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 185
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 186
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 187
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 188
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 189
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 190
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 191
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 192
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 193
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 194
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 195
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 196
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 197
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 198
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 199
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 200
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 201
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 202
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 203
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 239
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 240
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 241
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 242
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 243
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 244
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 245
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 246
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 247
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 248
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 249
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 250
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 251
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 252
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 253
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 254
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 255
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 256
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 257
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 258
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 259
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 260
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 261
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 262
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 45
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 46
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 48
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 50
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 51
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 55
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 56
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 57
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 58
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 59
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 60
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 61
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 62
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 63
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 64
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 65
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 67
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 71
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 73
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 75
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 76
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 78
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 80
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 81
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 82
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 83
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 84
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 85
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 87
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 89
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 90
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 91
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 92
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 93
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 95
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 96
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 97
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 98
+Defined Asset Funds Municipal Invt Tr Fd Interm Term Ser 99
+Defined Asset Funds Municipal Invt Tr Fd Mass Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Mass Ser 4
+Defined Asset Funds Municipal Invt Tr Fd Mass Ser 5
+Defined Asset Funds Municipal Invt Tr Fd Mass Ser 6
+Defined Asset Funds Municipal Invt Tr Fd Mbia Ins Disc Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Mbia Insured Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Mbia Insured Ser 2
+Defined Asset Funds Municipal Invt Tr Fd Minnesota Series 1
+Defined Asset Funds Municipal Invt Tr Fd Minnesota Series 2
+Defined Asset Funds Municipal Invt Tr Fd Minnesota Series 3
+Defined Asset Funds Municipal Invt Tr Fd Minnesota Series 4
+Defined Asset Funds Municipal Invt Tr Fd Minnesota Series 5
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 104
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 105
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 106
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 107
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 108
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 109
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 110
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 111
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 112
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 113
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 114
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 115
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 116
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 117
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 118
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 119
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 120
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 121
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 122
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 123
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 124
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 125
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 126
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 127
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 130
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 131
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 132
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 133
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 134
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 135
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 136
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 137
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 138
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 139
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 141
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 142
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 144
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 145
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 146
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 147
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 148
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 152
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 153
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 154
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 155
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 156
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 158
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 159
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 160
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 161
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 163
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 167
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 168
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 169
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 170
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 171
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 172
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 173
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 174
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 175
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 176
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 178
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 181
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 183
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 184
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 185
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 186
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 188
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 190
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 192
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 193
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 194
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 195
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 196
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 197
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 198
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 199
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 200
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 201
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 202
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 203
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 204
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 205
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 206
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 207
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 209
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 210
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 211
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 212
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 213
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 214
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 215
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 216
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 217
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 218
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 219
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 220
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 221
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 222
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 223
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 224
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 225
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 226
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 227
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 228
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 229
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 230
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 231
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 232
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 233
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 234
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 235
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 236
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 237
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 238
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 239
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 240
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 241
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 242
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 243
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 245
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 246
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 247
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 248
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 249
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 250
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 251
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 252
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 253
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 254
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 255
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 256
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 257
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 258
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 259
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 260
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 261
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 262
+Defined Asset Funds Municipal Investment Tr Fd Mp Series 263
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 264
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 265
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 266
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 267
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 268
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 269
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 270
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 271
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 272
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 273
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 274
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 275
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 276
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 277
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 278
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 279
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 280
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 281
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 282
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 283
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 284
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 285
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 286
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 287
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 288
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 289
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 290
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 291
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 292
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 293
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 294
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 295
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 296
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 297
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 298
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 299
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 300
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 302
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 303
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 304
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 305
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 306
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 307
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 308
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 309
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 310
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 311
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 312
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 313
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 314
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 315
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 316
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 317
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 318
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 319
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 320
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 321
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 322
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 323
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 324
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 325
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 326
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 327
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 328
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 329
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 330
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 331
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 332
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 333
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 334
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 335
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 336
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 337
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 338
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 339
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 340
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 341
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 342
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 343
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 344
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 345
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 346
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 347
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 348
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 349
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 350
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 351
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 352
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 353
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 354
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 355
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 356
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 357
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 358
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 359
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 360
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 361
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 362
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 363
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 364
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 365
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 366
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 367
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 368
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 369
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 370
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 371
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 372
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 373
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 374
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 375
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 376
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 377
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 378
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 379
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 380
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 381
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 382
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 383
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 384
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 385
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 386
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 387
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 388
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 389
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 390
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 391
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 392
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 393
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 394
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 395
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 396
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 397
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 398
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 399
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 400
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 401
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 402
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 403
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 404
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 405
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 406
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 407
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 408
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 409
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 410
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 411
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 412
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 413
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 414
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 415
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 416
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 417
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 418
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 419
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 420
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 421
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 422
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 423
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 424
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 425
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 426
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 427
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 428
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 429
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 430
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 431
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 432
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 433
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 434
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 435
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 436
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 437
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 438
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 439
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 440
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 441
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 442
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 443
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 444
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 445
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 446
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 447
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 448
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 449
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 450
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 451
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 452
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 453
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 454
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 455
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 456
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 457
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 458
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 459
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 460
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 461
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 462
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 463
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 464
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 465
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 466
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 467
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 468
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 469
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 470
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 471
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 472
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 473
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 474
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 475
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 476
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 477
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 478
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 479
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 480
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 481
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 482
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 483
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 484
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 485
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 486
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 487
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 488
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 489
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 490
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 491
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 492
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 493
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 494
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 495
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 496
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 497
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 498
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 499
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 500
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 501
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 502
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 503
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 504
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 505
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 506
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 507
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 508
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 509
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 510
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 511
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 512
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 513
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 514
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 515
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 516
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 517
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 518
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 519
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 520
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 521
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 522
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 523
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 524
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 525
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 63
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 64
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 65
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 66
+Defined Asset Funds Municipal Invt Tr Fd Mon Pymt Ser 78
+Defined Asset Funds Municipal Invt Tr Fd Multistate 96
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 1z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 2z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 3z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 4z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 5z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 6z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 76
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 77
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 78
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 79
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 7z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 80
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 81
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 83
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 84
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 85
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 86
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 87
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 88
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 89
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8t
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 8z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 91
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 92
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 93
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 94
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 95
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 97
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 98
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 99
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9a
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9b
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9c
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9d
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9e
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9f
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9g
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9h
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9i
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9j
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9k
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9l
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9m
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9n
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9o
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9p
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9r
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9s
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9u
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9v
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9w
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9x
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser 9z
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser A
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser B
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser C
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser D
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser E
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser F
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser G
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser H
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser I
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser J
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser K
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser L
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser M
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser N
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser O
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser P
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser Q
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser R
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser S
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser T
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser U
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser V
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser W
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser X
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser Y
+Defined Asset Funds Municipal Invt Tr Fd Multistate Ser Z
+Defined Asset Funds Municipal Invt Tr Fd New Jersey Ser 1
+Defined Asset Funds Municipal Invt Tr Fd New Jersey Ser 2
+Defined Asset Funds Municipal Invt Tr Fd New Jersey Ser 3
+Defined Asset Funds Municipal Invt Tr Fd New Jersey Ser 4
+Defined Asset Funds Municipal Invt Tr Fd New York Put Ser 1
+Defined Asset Funds Municipal Invt Tr Fd New York Put Ser 2
+Defined Asset Funds Municipal Invt Tr Fd New York Put Ser 4
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 100
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 101
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 102
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 103
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 104
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 105
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 106
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 107
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 108
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 109
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 110
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 111
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 112
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 17
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 18
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 19
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 20
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 21
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 22
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 23
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 24
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 25
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 26
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 27
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 28
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 29
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 30
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 31
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 32
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 33
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 34
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 35
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 37
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 38
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 39
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 4
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 40
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 41
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 51
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 53
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 54
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 55
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 56
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 57
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 59
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 60
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 61
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 65
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 66
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 67
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 7
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 70
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 71
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 72
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 74
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 75
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 76
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 77
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 78
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 79
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 8
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 80
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 81
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 82
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 83
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 84
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 85
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 86
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 87
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 88
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 89
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 90
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 91
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 92
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 93
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 94
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 95
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 96
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 97
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 98
+Defined Asset Funds Municipal Invt Tr Fd New York Ser 99
+Defined Asset Funds Municipal Invt Tr Fd New York Ser A
+Defined Asset Funds Municipal Invt Tr Fd New York Ser B
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 11
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 12
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 14
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 15
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 16
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 17
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 18
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 20
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 22
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 23
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 24
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 25
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 26
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser 27
+Defined Asset Funds Municipal Invt Tr Fd Pennsylvania Ser A
+Defined Asset Funds Municipal Invt Tr Fd Put Ser 2
+Defined Asset Funds Municipal Invt Tr Fd Texas Ins Ser 1
+Defined Asset Funds Municipal Invt Tr Fd Texas Ins Ser 2
+Defined Asset Funds Municipal Invt Tr Fd Texas Ins Ser 3
+Defined Asset Funds Municipal Invt Tr Fd Texas Ins Ser 4
+Defined Asset Funds Municipal Invt Tr Fd Texas Ins Ser 5
+Defined Asset Funds Municipal Invt Tr Fund Multistate Ser 8y
+Defined Asset Funds Municipal Invt Trust Fd Insured Ser 169
+Defined Asset Funds Municipal Invt Trust Fd Insured Ser 172
+Defined Asset Funds Municipal Invt Trust Fd Insured Ser 174
+Defined Asset Funds Municipal Invt Trust Fund Ohio Series 1
+Defined Asset Funds Municipal Invt Trust Fund Ohio Series 2
+Defined Asset Funds Municipal Invt Trust Fund Ohio Series 3
+Defined Asset Funds Municipal State Series 2
+Defined Asset Funds Municipal State Series 3
+Defined Asset Funds Municipal State Series 4
+Defined Asset Funds New York Insured Series
+Defined Asset Funds New York Insured Series 2
+Defined Assset Funds Municipal Invt Tr Fd Multistate Ser 9t
+Delaware Group Global & International Funds, Inc.
+American Funds Emerging Markets Growth Fund, Inc.
+Equity Income Fund Concept Ser Tel Global Tr Def Asset Funds
+Equity Income Fund Concept Series 18 Defined Asset Funds
+Equity Income Fund Concept Series 19 Defined Asset Funds
+Equity Income Fund Concept Series 20 Defined Asset Funds
+Equity Income Fund Concept Series 21 Defined Asset Funds
+Equity Income Fund Concept Series 22 Defined Asset Funds
+General Government Securities Money Market Funds, Inc.
+Government Securities Inc Fd Gnma Ser 1w Defined Asset Funds
+Government Securities Inc Fd Gnma Ser 1x Defined Asset Funds
+Government Securities Inc Fd Gnma Ser 1y Defined Asset Funds
+Government Securities Inc Fd Gnma Ser 1z Defined Asset Funds
+T. Rowe Price Institutional International Funds, Inc.
+Kemper Defined Funds Insured National Series 1/
+Kemper Defined Funds State File Series 1
+Reliastar Life Ins Co Of Ny Var Annuity Funds D E F G H & I
+Count of tods :  1880

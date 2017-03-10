@@ -29,7 +29,7 @@ func main() {
 
 	var vmethod string
 
-	vmethod = "post"
+	vmethod = "get"
 
 	if vmethod == "get" {
 		resp, err := http.Get("http://localhost:8080/todos")
@@ -73,7 +73,7 @@ func main() {
 		var tdns Todosnames
 		//populate slice by appending with struct
 		tdns = append(tdns, tdn)
-		
+
 		//Repeat population
 		tdn = Todoname{Name: "my lunch appt"}
 		tdns = append(tdns, tdn)

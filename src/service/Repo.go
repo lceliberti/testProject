@@ -1,9 +1,11 @@
 package main
 
 import (
+	"encoding/csv"
 	"fmt"
 	"hash/crc32"
 	"log"
+	"os"
 	"strings"
 	"stringutil"
 
@@ -25,6 +27,28 @@ func init() {
 	CreateIndex()
 	RepoCreateTodo(Todo{Name: "Write 2nd presentation"})
 	RepoCreateTodo(Todo{Name: "Schedule 2nd meeting"})
+
+	file, err := os.Open("test.csv")
+	if err != nil {
+		fmt.Println("Error", err)
+		return
+	}
+	defer file.Close()
+
+	reader := csv.NewReader(file)
+	record, err := reader.ReadAll()
+	if err != nil {
+		fmt.Println("Error", err)
+	}
+
+	var singletodo Todo
+	var str string
+	for value := range record { // for i:=0; i<len(record)
+		fmt.Println("", record[value])
+		str = strings.Join(record[value], "")
+		singletodo.Name = tname(str)
+		RepoCreateTodo(singletodo)
+	}
 
 }
 
@@ -55,9 +79,12 @@ func RepoCreateTodo(t Todo) Todo {
 	toDoID = RepoPopulateIndex(string(t.Name))
 	m[toDoID] = currentId
 
+	/*********
 	for k, v := range m {
 		fmt.Println("k:", k, "v:", v)
 	}
+
+	********/
 
 	return t
 }
@@ -103,12 +130,12 @@ func RepoPopulateIndex(name string) uint64 {
 	}
 
 	for _, t := range tokens {
-		fmt.Println("Name: ", name, "Token: ", t)
+		//		fmt.Println("Name: ", name, "Token: ", t)
 		toks = append(toks, crc32.ChecksumIEEE([]byte(t)))
 	}
 	hName = crc32.ChecksumIEEE([]byte(name))
 	toks = append(toks, hName)
-	log.Println("Populating index for: ", name)
+	//	log.Println("Populating index for: ", name)
 
 	idx.AddDocument(toks)
 
@@ -120,12 +147,12 @@ func RepoPopulateIndex(name string) uint64 {
 
 	ids := idx.Query(qtoks)
 
-	fmt.Println(len(qtoks))
-	fmt.Println(len(ids))
+	//	fmt.Println(len(qtoks))
+	//	fmt.Println(len(ids))
 
 	for _, doc := range ids {
 
-		fmt.Println(doc)
+		//		fmt.Println(doc)
 		myToDoID = uint64(doc)
 	}
 
